@@ -1,38 +1,189 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e6e9f0, #eef1f5);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header {
+  background-color: #1c1f2e;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid #ff4500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.sign-in-button, .sign-out-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 5px 10px; /* Made the buttons smaller */
+  margin-left: auto; /* Push the button to the right */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.sign-in-button:hover, .sign-out-button:hover {
+  background-color: #e63900;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.tabs button {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tabs button:hover {
+  color: #ff4500;
+}
+
+.new-post {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.new-post textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-post-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-post-button:hover {
+  background-color: #e63900;
+}
+
+.sports-news {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.news-item {
+  background: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.news-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.news-content p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.read-more {
+  color: #ff4500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.posts {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.post {
+  background: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+  font-size: 1.2rem;
+}
+
+.post span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.delete-post-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-post-button:hover {
+  background-color: #e63900;
 }
